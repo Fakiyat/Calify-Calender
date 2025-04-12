@@ -23,7 +23,9 @@ Before you begin, ensure you have installed:
 
 ![Screenshot 2025-04-13 030816](https://github.com/user-attachments/assets/cb061e0a-3e49-4dd2-9c5a-80d335a4f727)
 <br/>
+![Screenshot 2025-04-13 030823](https://github.com/user-attachments/assets/6b348cd5-a6d3-4ca9-a4df-856500a13e4d)
 
+<br/>
 
 
 
