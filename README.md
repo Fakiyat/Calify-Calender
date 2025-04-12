@@ -19,6 +19,19 @@ Before you begin, ensure you have installed:
 - npm (comes with Node.js)
 - Git
 
+## Screenshot Preview
+
+![Screenshot 2025-04-13 030816](https://github.com/user-attachments/assets/cb061e0a-3e49-4dd2-9c5a-80d335a4f727)
+<br/>
+
+
+
+
+
+
+
+
+
 ## Project Structure
 
 ```
@@ -181,7 +194,3 @@ python manage.py check
 2. Create a new branch
 3. Make your changes
 4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License. 
