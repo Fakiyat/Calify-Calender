@@ -1,0 +1,15 @@
+{
+    "builds": [{
+        "src": "calendar_backend/wsgi.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "calendar_backend/wsgi.py"
+        }
+    ],
+    "env": {
+        "PYTHON_VERSION": "3.9"
+    }
+} 
