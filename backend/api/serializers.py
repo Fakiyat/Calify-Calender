@@ -14,7 +14,7 @@ class TaskSerializer(serializers.ModelSerializer):
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ['id', 'title', 'description', 'start_time', 'end_time', 'created_at', 'updated_at']
+        fields = ['id', 'title', 'description', 'start_time', 'end_time', 'color', 'created_at', 'updated_at']
         read_only_fields = ['created_at', 'updated_at']
 
     def validate(self, data):

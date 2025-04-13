@@ -25,14 +25,14 @@ class EventViewSet(viewsets.ModelViewSet):
     
     def get_queryset(self):
         queryset = Event.objects.all()
-        start = self.request.query_params.get('start', None)
-        end = self.request.query_params.get('end', None)
+        start_date = self.request.query_params.get('start_date', None)
+        end_date = self.request.query_params.get('end_date', None)
         
-        if start is not None and end is not None:
+        if start_date is not None and end_date is not None:
             try:
-                start_date = datetime.fromisoformat(start.replace('Z', '+00:00'))
-                end_date = datetime.fromisoformat(end.replace('Z', '+00:00'))
-                queryset = queryset.filter(start_time__gte=start_date, end_time__lte=end_date)
+                start = datetime.fromisoformat(start_date.replace('Z', '+00:00'))
+                end = datetime.fromisoformat(end_date.replace('Z', '+00:00'))
+                queryset = queryset.filter(start_time__gte=start, end_time__lte=end)
             except ValueError:
                 pass
         

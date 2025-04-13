@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Goal(models.Model):
     title = models.CharField(max_length=200)
@@ -19,9 +20,10 @@ class Task(models.Model):
 
 class Event(models.Model):
     title = models.CharField(max_length=200)
-    description = models.TextField(blank=True)
+    description = models.TextField(blank=True, null=True)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
+    color = models.CharField(max_length=50, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

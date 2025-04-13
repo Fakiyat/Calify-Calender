@@ -62,8 +62,8 @@ WSGI_APPLICATION = 'calendar_backend.wsgi.application'
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'calendar_db',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
